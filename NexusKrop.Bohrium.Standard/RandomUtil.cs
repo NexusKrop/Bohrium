@@ -2,7 +2,7 @@
 // Licensed under Apache-2.0 license;
 // see https://codeberg.org/NexusKrop/Bohrium/src/branch/trunk/LICENSE.
 
-namespace NexusKrop.Borhium;
+namespace NexusKrop.Bohrium;
 using System;
 
 /// <summary>
