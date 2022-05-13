@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NexusKrop.Borhium.Standard\NexusKrop.Bohrium.Standard.csproj" />
+    <ProjectReference Include="..\NexusKrop.Bohrium.Standard\NexusKrop.Bohrium.Standard.csproj" />
   </ItemGroup>
 
 </Project>
