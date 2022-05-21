@@ -1,3 +1,7 @@
+// (C) NexusKrop & contributors. 2022.
+// Licensed under Apache-2.0 license;
+// see https://codeberg.org/NexusKrop/Bohrium/src/branch/trunk/LICENSE.
+
 namespace NexusKrop.Bohrium.Util;
 
 using System;
