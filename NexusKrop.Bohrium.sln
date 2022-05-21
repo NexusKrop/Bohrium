@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation Files", "Docu
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Config", "Solution Config", "{3AA58170-B80F-4559-A64B-DC901A91A4C6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Projects", "Test Projects", "{3AA58170-B80F-4559-A64B-DC901A91A4C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusKrop.Borhium.Tests", "NexusKrop.Borhium.Tests\NexusKrop.Borhium.Tests.csproj", "{C04B29B3-DA5C-492C-BA6B-0F4638D16FA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,9 +30,16 @@ Global
 		{FB1234A6-21FA-4FFA-AF35-4163EC38C847}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB1234A6-21FA-4FFA-AF35-4163EC38C847}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB1234A6-21FA-4FFA-AF35-4163EC38C847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04B29B3-DA5C-492C-BA6B-0F4638D16FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04B29B3-DA5C-492C-BA6B-0F4638D16FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04B29B3-DA5C-492C-BA6B-0F4638D16FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04B29B3-DA5C-492C-BA6B-0F4638D16FA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C04B29B3-DA5C-492C-BA6B-0F4638D16FA7} = {3AA58170-B80F-4559-A64B-DC901A91A4C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15963E58-3B1C-48E2-963F-B876BCF85D30}
