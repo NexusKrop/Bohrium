@@ -15,8 +15,15 @@ public class ResourceLocation
     private string _ns;
     private string _key;
 
-    private static readonly Regex namespaceRegex = new("^[a-z0-9_.-]+$");
-    private static readonly Regex keyRegex = new("^[a-z0-9_.-/]+$");
+    /// <summary>
+    /// Gets a regular expression to verify namespace of a resource location identifier.
+    /// </summary>
+    public static readonly Regex NamespaceVerifyPattern = new("^[a-z0-9_.-]+$");
+
+    /// <summary>
+    /// Gets a regular expression to verify key of a resource location identifier.
+    /// </summary>
+    public static readonly Regex KeyVerifyPattern = new("^[a-z0-9_.-/]+$");
 
     /// <summary>
     /// Initialises a new instance of the <see cref="ResourceLocation"/> class.
@@ -29,9 +36,33 @@ public class ResourceLocation
         Key = Objects.RequiresArgNonNull(key, nameof(key));
     }
 
+    /// <summary>
+    /// Converts a string representation of resource location to an instance representation of it.
+    /// </summary>
+    /// <param name="str">The string.</param>
+    /// <returns>An instance of <see cref="ResourceLocation"/></returns>
+    /// <exception cref="ArgumentException">The string representation was invalid.</exception>
+    public static ResourceLocation Parse(string str)
+    {
+        if (!str.Contains(":")) throw new ArgumentException("Namespace or key not specified.", nameof(str));
+        var splitted = str.Split(':');
+
+        if (splitted.Length != 2)
+        {
+            throw new ArgumentException("Invalid resource location format.", nameof(str));
+        }
+
+        if (!NamespaceVerifyPattern.IsMatch(splitted[0]) || !KeyVerifyPattern.IsMatch(splitted[1]))
+        {
+            throw new ArgumentException("Invalid key or namespace format for resource location.", nameof(str));
+        }
+
+        return new ResourceLocation(splitted[0], splitted[1]);
+    }
+
     private static void VerifyNamespace(string ns)
     {
-        if (!namespaceRegex.IsMatch(ns))
+        if (!NamespaceVerifyPattern.IsMatch(ns))
         {
             throw new FormatException($"Invalid resource location name-space: {ns}");
         }
@@ -39,7 +70,7 @@ public class ResourceLocation
 
     private static void VerifyKey(string key)
     {
-        if (!keyRegex.IsMatch(key))
+        if (!KeyVerifyPattern.IsMatch(key))
         {
             throw new FormatException($"Invalid resource location key: {key}");
         }
@@ -57,6 +88,9 @@ public class ResourceLocation
         return $"{Namespace}:{Key}";
     }
 
+    /// <summary>
+    /// Gets or sets the namespace of this instance.
+    /// </summary>
     public string Namespace
     {
         get => _ns;
@@ -66,6 +100,10 @@ public class ResourceLocation
             _ns = value;
         }
     }
+
+    /// <summary>
+    /// Gets or sets the key of this instance.
+    /// </summary>
     public string Key
     {
         get => _key;
