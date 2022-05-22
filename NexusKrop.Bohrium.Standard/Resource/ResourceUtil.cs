@@ -27,7 +27,15 @@ public static class ResourceUtil
     {
         var builder = new StringBuilder();
         builder.Append(location.Namespace).Append(Path.DirectorySeparatorChar);
-        builder.Append(location.Key.Replace('.', Path.DirectorySeparatorChar));
+        var key = location.Key.Replace('.', Path.DirectorySeparatorChar);
+
+        if (Path.DirectorySeparatorChar != '/')
+        {
+            key = key.Replace('/', Path.DirectorySeparatorChar);
+        }
+
+        builder.Append(key);
+
         return builder.ToString();
     }
 
@@ -48,9 +56,17 @@ public static class ResourceUtil
         {
             throw new ArgumentException("Dots not allowed in key", nameof(location));
         }
-
         var builder = new StringBuilder();
         builder.Append(location.Namespace).Append(Path.DirectorySeparatorChar);
+
+        var key = location.Key.Replace('.', Path.DirectorySeparatorChar);
+        if (Path.DirectorySeparatorChar != '/')
+        {
+            key = key.Replace('/', Path.DirectorySeparatorChar);
+        }
+
+        builder.Append(key);
+
         return builder.ToString();
     }
 }
