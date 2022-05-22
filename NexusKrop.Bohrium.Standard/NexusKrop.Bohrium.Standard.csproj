@@ -4,6 +4,31 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <RootNamespace>NexusKrop.Bohrium</RootNamespace>
+    <Version>0.1.1</Version>
+    <Authors>WithLithum</Authors>
+    <Company>NexusKrop</Company>
+    <Product>Bohrium</Product>
+    <Description>Common library used across CLR implementation supporting .NET Standard 2.0</Description>
+    <Copyright>(C) 2022 NexusKrop</Copyright>
+    <PackageProjectUrl>https://github.com/NexusKrop/Bohrium</PackageProjectUrl>
+    <PackageIcon>Bohrium.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/NexusKrop/Bohrium</RepositoryUrl>
+    <PackageTags>bohrium</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Bohrium.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

@@ -1,10 +1,34 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Version>0.1.1</Version>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageTags>bohrium</PackageTags>
+    <RepositoryUrl>https://github.com/NexusKrop/Bohrium</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>Bohrium.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/NexusKrop/Bohrium</PackageProjectUrl>
+    <Description>Bohrium .NET Module for .NET specific stuff</Description>
+    <Copyright>(C) 2022 NexusKrop</Copyright>
+    <Company>NexusKrop</Company>
+    <Product>Bohrium</Product>
+    <Authors>WithLithum</Authors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Bohrium.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\NexusKrop.Bohrium.Standard\NexusKrop.Bohrium.Standard.csproj" />
