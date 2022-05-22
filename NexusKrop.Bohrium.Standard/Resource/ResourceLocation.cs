@@ -70,7 +70,7 @@ public class ResourceLocation
 
     private static void VerifyKey(string key)
     {
-        if (!KeyVerifyPattern.IsMatch(key))
+        if (!KeyVerifyPattern.IsMatch(key) || key.Contains(".."))
         {
             throw new FormatException($"Invalid resource location key: {key}");
         }

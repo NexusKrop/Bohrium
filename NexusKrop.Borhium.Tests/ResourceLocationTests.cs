@@ -125,4 +125,20 @@ public class ResourceLocationTests
 
         Assert.AreEqual(verify, path);
     }
+
+    [TestMethod]
+    public void RecursePreventionTest()
+    {
+        try
+        {
+            _ = new ResourceLocation("bohrium", "tests/../test11");
+        }
+        catch (FormatException ex)
+        {
+            Console.WriteLine(ex);
+            return;
+        }
+
+        Assert.Fail("Does not found recurse");
+    }
 }
