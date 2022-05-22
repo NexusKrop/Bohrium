@@ -17,6 +17,7 @@
     <Product>Bohrium</Product>
     <Authors>WithLithum</Authors>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
