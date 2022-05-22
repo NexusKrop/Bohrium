@@ -1,5 +1,8 @@
-namespace NexusKrop.Borhium.Tests;
+// Bohrium Unit Tests (.NET)
+// (C) NexusKrop & contributors 2022. Licensed under Apache-2.0 licence.
+// See https://gitlab.com/NexusKrop/Bohrium/-/blob/trunk/LICENSE
 
+namespace NexusKrop.Borhium.Tests;
 using NexusKrop.Bohrium.Resource;
 
 [TestClass]
