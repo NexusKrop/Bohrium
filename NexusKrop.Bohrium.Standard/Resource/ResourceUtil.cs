@@ -1,6 +1,6 @@
 ﻿// Bohrium for .NET Standard (Mono/.NET Framework/.NET/...)
 // (C) NexusKrop & contributors 2022. Licensed under Apache-2.0 licence.
-// See https://gitlab.com/NexusKrop/Bohrium/-/blob/trunk/LICENSE
+// See https://gitlab.com/NexusKrop/Bohrium/LICENSE
 
 namespace NexusKrop.Bohrium.Resource;
 using System;
