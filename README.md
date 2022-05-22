@@ -1,14 +1,25 @@
 # Bohrium
 
-This is the common library used by our .NET projects.
+**Bohrium** are a set of common code used by NexusKrop projects in development of any CLR-based programs (such as game modification, and also general-purpose programs).
 
-## Structure
+It is currently being actively developed.
 
-All stuff that can be used on any .NET implementation is in `Bohrium.Standard`.
-All others are in the `Bohrium` project.
+## Installation
+
+There is currently no way to quickly install Bohrium due to this library being actively developed.
+
+You can use this library by `git submodule` or by building this library.
 
 ## Usage
 
-This library does not do much on it's own. We usually refer this by submodules or NuGet package from our own feed if possible.
+Usages are covered in the Wiki as features being added.
 
-Keep in mind that this is STILL under development.
+## Contributing
+
+Merge requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Licence
+
+See [LICENSE](LICENSE) - TL;DR: `Apache-2.0`
