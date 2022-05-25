@@ -12,7 +12,7 @@ public static class RandomUtil
 {
     private static readonly Random _random = new();
 
-    /// <inheritdoc cref="Random.Next"/>
+    /// <inheritdoc cref="Random.Next()"/>
     public static int GetInt()
     {
         return _random.Next();
