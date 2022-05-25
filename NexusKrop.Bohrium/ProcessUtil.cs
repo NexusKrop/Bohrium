@@ -1,6 +1,6 @@
 // Bohrium for .NET
 // (C) NexusKrop & contributors 2022. Licensed under Apache-2.0 licence.
-// See https://gitlab.com/NexusKrop/Bohrium/LICENSE
+// See https://github.com/NexusKrop/Bohrium/LICENSE
 
 namespace NexusKrop.Bohrium;
 using System.Diagnostics;
