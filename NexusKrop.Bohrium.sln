@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation Files", "Documentation Files", "{0DF2F18A-B53A-42DE-8AB9-01CA5D46358F}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		SECURITY.md = SECURITY.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Projects", "Test Projects", "{3AA58170-B80F-4559-A64B-DC901A91A4C6}"
