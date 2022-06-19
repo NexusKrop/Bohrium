@@ -28,6 +28,6 @@ public static class TimeUtil
     /// <returns>Unix epoch based time.</returns>
     public static long ToEpochTime(DateTime source)
     {
-        return new DateTimeOffset(source).ToUnixTimeSeconds();
+        return new DateTimeOffset(source.ToUniversalTime()).ToUnixTimeSeconds();
     }
 }
