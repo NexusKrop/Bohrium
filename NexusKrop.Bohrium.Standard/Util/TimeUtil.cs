@@ -18,7 +18,7 @@ public static class TimeUtil
     /// <returns>An instance of <see cref="DateTime"/> representing the <paramref name="source"/> as .NET time.</returns>
     public static DateTime FromEpochTime(long source)
     {
-        return UnixEpoch.AddMilliseconds(source);
+        return DateTimeOffset.FromUnixTimeSeconds(source).DateTime;
     }
 
     /// <summary>
